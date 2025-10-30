@@ -35,4 +35,9 @@ public class House extends FixedAsset {
     public void setBedrooms(int bedrooms) {
         this.bedrooms = bedrooms;
     }
+
+    @Override
+    public double getValue() {
+        return 200 * squareFeet;
+    }
 }

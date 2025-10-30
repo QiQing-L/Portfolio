@@ -1,6 +1,6 @@
 package com.pluralsight.finance;
 
-public class FixedAsset implements IValuable {
+public abstract class FixedAsset implements IValuable {
     private String name;
     private double value;
 
@@ -23,7 +23,5 @@ public class FixedAsset implements IValuable {
 
 
     @Override
-    public double getValue() {
-        return 0;
-    }
+    public abstract double getValue();
 }
